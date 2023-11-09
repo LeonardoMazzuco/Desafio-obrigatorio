@@ -27,12 +27,12 @@ class Veiculo {
             const frearValue = parseInt(document.getElementById("frear").value);
 
             let meuCarro = new Veiculo(marca, modelo, cor);
-            console.log(`Meu carro é um ${meuCarro.marca} ${meuCarro.modelo} de cor ${meuCarro.cor}.`);
-            console.log(`A velocidade atual do veículo é ${meuCarro.velocidade} km/h.`);
+            alert(`Meu carro é um ${meuCarro.marca} ${meuCarro.modelo} de cor ${meuCarro.cor}.`);
+            alert(`A velocidade atual do veículo é ${meuCarro.velocidade} km/h.`);
 
             meuCarro.acelerar(acelerarValue);
-            console.log(`Acelerando, a velocidade agora é ${meuCarro.velocidade} km/h.`);
+            alert(`Acelerando, a velocidade agora é ${meuCarro.velocidade} km/h.`);
 
             meuCarro.frear(frearValue);
-            console.log(`Reduzindo a velocidade, agora é ${meuCarro.velocidade} km/h.`);
+            alert(`Reduzindo a velocidade, agora é ${meuCarro.velocidade} km/h.`);
         }
